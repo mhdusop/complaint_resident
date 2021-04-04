@@ -4,7 +4,6 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Complaint;
-<<<<<<< HEAD
 use Illuminate\Support\Facades\DB;
 Use Auth;
 
@@ -15,12 +14,6 @@ class ComplaintController extends Controller
      *
      * @return void
      */
-=======
-
-class ComplaintController extends Controller
-{
-
->>>>>>> 652ea1962c9ac6f77fd71446ffabd1d0585bc9b0
     public function __construct()
     {
         $this->middleware('auth');
@@ -33,12 +26,7 @@ class ComplaintController extends Controller
      */
     public function index()
     {
-<<<<<<< HEAD
         $complaints = Complaint::with(['user'])->paginate('15');
-=======
-        $complaints = Complaint::with(['user'])->paginate(15);
-        // dd($complaints); 
->>>>>>> 652ea1962c9ac6f77fd71446ffabd1d0585bc9b0
         return view('admin_pages.complaints.index', compact('complaints'));
     }
 
@@ -49,11 +37,7 @@ class ComplaintController extends Controller
      */
     public function create()
     {
-<<<<<<< HEAD
         return view ('admin_pages.complaints.create');
-=======
-        return view('admin_pages.complaints.create');
->>>>>>> 652ea1962c9ac6f77fd71446ffabd1d0585bc9b0
     }
 
     /**
@@ -64,7 +48,6 @@ class ComplaintController extends Controller
      */
     public function store(Request $request)
     {
-<<<<<<< HEAD
         $file = $request->file('file');
  
         $nama_file = time()."_".$file->getClientOriginalName();
@@ -83,15 +66,6 @@ class ComplaintController extends Controller
 
 
         return  redirect (route('pengaduan.index'));
-=======
-        Complaint::create([
-            'user_id' => $request->nama,
-            'nik' => $request->nik,
-            'isi_laporan' => $request->isi_laporan,
-            'foto' => $request->foto,
-            'status' => $request->status
-        ]);
->>>>>>> 652ea1962c9ac6f77fd71446ffabd1d0585bc9b0
     }
 
     /**
@@ -100,16 +74,10 @@ class ComplaintController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-<<<<<<< HEAD
     public function show($user_id)
     {
         $complaint = Complaint::find($user_id);
         return view('admin_pages.complaints.detail', compact('complaint'));
-=======
-    public function show($id)
-    {
-        //
->>>>>>> 652ea1962c9ac6f77fd71446ffabd1d0585bc9b0
     }
 
     /**
@@ -120,13 +88,8 @@ class ComplaintController extends Controller
      */
     public function edit($id)
     {
-<<<<<<< HEAD
         $complaint = Complaint::find($id);
         return view('admin_pages.complaints.edit', compact('complaint'));
-=======
-        $complaints = Complaint::find($id);
-        return view('admin_pages.complaints.edit', compact('complaints'));
->>>>>>> 652ea1962c9ac6f77fd71446ffabd1d0585bc9b0
     }
 
     /**
@@ -138,7 +101,6 @@ class ComplaintController extends Controller
      */
     public function update(Request $request, $id)
     {
-<<<<<<< HEAD
         $complaint = Complaint::find($id);
         $nama_file = null;
         if ($request->file('file')) {
@@ -169,9 +131,6 @@ class ComplaintController extends Controller
         ]);
 
         return  redirect (route('pengaduan.index'));
-=======
-        //
->>>>>>> 652ea1962c9ac6f77fd71446ffabd1d0585bc9b0
     }
 
     /**
@@ -182,11 +141,7 @@ class ComplaintController extends Controller
      */
     public function destroy($id)
     {
-<<<<<<< HEAD
         DB::table('complaints')->where('id', $id)->delete();
         return redirect()->route('pengaduan.index');
-=======
-        //
->>>>>>> 652ea1962c9ac6f77fd71446ffabd1d0585bc9b0
     }
 }

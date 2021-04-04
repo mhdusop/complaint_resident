@@ -1,6 +1,5 @@
 @extends('layouts.frontend_layout')
 
-<<<<<<< HEAD
 @section('content')
 <!-- Begin Page Content -->
 <div class="container-fluid">
@@ -27,32 +26,12 @@
                     </div>
                     <div class="col-auto">
                         <i class="fas fa-calendar fa-2x text-gray-300"></i>
-=======
-        <!-- Content Row -->
-        <div class="row">
-
-            <!-- Earnings (Monthly) Card Example -->
-            <div class="col-xl-3 col-md-6 mb-4">
-                <div class="card border-left-primary shadow h-100 py-2">
-                    <div class="card-body">
-                        <div class="row no-gutters align-items-center">
-                            <div class="col mr-2">
-                                <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
-                                    Jumlah Pengaduan</div>
-                                <div class="h5 mb-0 font-weight-bold text-gray-800">1000</div>
-                            </div>
-                            <div class="col-auto">
-                                <i class="fas fa-calendar fa-2x text-gray-300"></i>
-                            </div>
-                        </div>
->>>>>>> 652ea1962c9ac6f77fd71446ffabd1d0585bc9b0
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
-<<<<<<< HEAD
     <!-- Earnings (Monthly) Card Example -->
     <div class="col-xl-3 col-md-6 mb-4">
         <div class="card border-left-success shadow h-100 py-2">
@@ -62,22 +41,6 @@
                         <div class="text-xs font-weight-bold text-success text-uppercase mb-1">
                             Earnings (Annual)</div>
                     
-=======
-            <!-- Earnings (Monthly) Card Example -->
-            <div class="col-xl-3 col-md-6 mb-4">
-                <div class="card border-left-success shadow h-100 py-2">
-                    <div class="card-body">
-                        <div class="row no-gutters align-items-center">
-                            <div class="col mr-2">
-                                <div class="text-xs font-weight-bold text-success text-uppercase mb-1">
-                                    Pengaduan Terverifiksi</div>
-                                <div class="h5 mb-0 font-weight-bold text-gray-800">500</div>
-                            </div>
-                            <div class="col-auto">
-                                <i class="fas fa-dollar-sign fa-2x text-gray-300"></i>
-                            </div>
-                        </div>
->>>>>>> 652ea1962c9ac6f77fd71446ffabd1d0585bc9b0
                     </div>
                     <div class="col-auto">
                         <i class="fas fa-dollar-sign fa-2x text-gray-300"></i>
@@ -99,7 +62,6 @@
                             <div class="col-auto">
                                 <div class="h5 mb-0 mr-3 font-weight-bold text-gray-800">50%</div>
                             </div>
-<<<<<<< HEAD
                             <div class="col">
                                 <div class="progress progress-sm mr-2">
                                     <div class="progress-bar bg-info" role="progressbar"
@@ -111,14 +73,10 @@
                     </div>
                     <div class="col-auto">
                         <i class="fas fa-clipboard-list fa-2x text-gray-300"></i>
-=======
-                        </div>
->>>>>>> 652ea1962c9ac6f77fd71446ffabd1d0585bc9b0
                     </div>
                 </div>
             </div>
         </div>
-<<<<<<< HEAD
     </div>
 
     <!-- Pending Requests Card Example -->
@@ -152,11 +110,3 @@
 </div>
 <!-- End of Main Content -->
 @endsection
-=======
-
-        <!-- Content Row -->
-
-      
-    <!-- /.container-fluid -->
-@stop
->>>>>>> 652ea1962c9ac6f77fd71446ffabd1d0585bc9b0

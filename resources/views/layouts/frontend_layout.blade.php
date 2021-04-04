@@ -19,11 +19,7 @@
 
     <!-- Custom styles for this template-->
     <link href="{{asset('frontend_assets/css/sb-admin-2.min.css')}}" rel="stylesheet">
-<<<<<<< HEAD
     <script src="{{asset('frontend_assets/ckeditor/ckeditor.js')}}"></script>
-=======
-    <script type="text/javascript" src="{{asset('frontend_assets/ckeditor/ckeditor.js')}}"></script>
->>>>>>> 652ea1962c9ac6f77fd71446ffabd1d0585bc9b0
 
 </head>
 
@@ -47,34 +43,6 @@
             <hr class="sidebar-divider my-0">
 
             <!-- Nav Item - Dashboard -->
-<<<<<<< HEAD
-=======
-            <li class="nav-item">
-                <a class="nav-link" href="index.html">
-                    <i class="fas fa-fw fa-tachometer-alt"></i>
-                    <span>Dashboard</span></a>
-            </li>
-
-            <li class="nav-item">
-                <a class="nav-link" href="{{route('complaints.index')}}">
-                <i class="fas fa-fw fa-folder"></i>
-                    <span>Pengaduan</span></a>
-            </li>
-
-            
-            <!-- <li class="nav-item ">
-                <a class="nav-link" href="index.html">
-                <i class="fas fa-check"></i>
-                    <span>Verifikasi Pengaduan</span></a>
-            </li> -->
-
-            <li class="nav-item">
-                <a class="nav-link" href="{{route('pengguna.index')}}">
-                <i class="fas fa-user-plus"></i>
-                    <span>Pengguna</span></a>
-            </li>
-
->>>>>>> 652ea1962c9ac6f77fd71446ffabd1d0585bc9b0
             
             @if (Auth::user()->role === 'admin')
                 <li class="nav-item">
@@ -212,7 +180,6 @@
                 </div>
                 <div class="modal-body">Apakah anda yakin mau keluar?</div>
                 <div class="modal-footer">
-<<<<<<< HEAD
                     <button class="btn btn-secondary text-left" type="button" data-dismiss="modal">Cancel</button>
                     <a class="btn btn-primary" href="{{ route('logout') }}"
                         onclick="event.preventDefault();
@@ -223,19 +190,6 @@
                     <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                         @csrf
                     </form>
-=======
-                    
-                    <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-                        <a class="nav-link btn btn-primary" href="{{ route('logout') }}"
-                                            onclick="event.preventDefault();
-                                                            document.getElementById('logout-form').submit();">
-                            <i class="fas fa-sign-out-alt"></i>
-                            <span style="cursor: pointer">Log Out</span></a>
-                            <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-                                @csrf
-                            </form>
-                        </a>
->>>>>>> 652ea1962c9ac6f77fd71446ffabd1d0585bc9b0
                 </div>
             </div>
         </div>
@@ -264,14 +218,8 @@
 
     <!-- Page level custom scripts -->
     <script src="{{asset('frontend_assets/js/demo/datatables-demo.js')}}"></script>
-<<<<<<< HEAD
     <script>
         CKEDITOR.replace('address-editor');
-=======
-
-    <script>
-        CKEDITOR.replace('address-ckeditor')
->>>>>>> 652ea1962c9ac6f77fd71446ffabd1d0585bc9b0
     </script>
 </body>
 

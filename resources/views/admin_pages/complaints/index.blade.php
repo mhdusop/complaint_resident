@@ -1,5 +1,4 @@
 @extends('layouts.frontend_layout')
-<<<<<<< HEAD
 
 @section('content')
 <!-- Begin Page Content -->
@@ -103,61 +102,10 @@
                 </tbody>
             </table>
             @endif
-=======
-@section('content')
-
-<div class="container-fluid">
-
-
-<!-- DataTales Example -->
-<div class="card shadow mb-4">
-    <div class="card-header py-3">
-        <h6 class="m-0 font-weight-bold text-primary">Daftar Pengaduan</h6>
-        @if (Auth::user()->role === 'admin')
-        <a href="{{route('complaints.create')}}" class="btn btn-primary float-right">Tambah Pengaduan</a>
-        @endif
-    </div>
-    <div class="card-body">
-        <div class="table-responsive">
-            <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
-                <thead>
-                    <tr>
-                        <th>Nama Pelapor</th>
-                        <th>NIK</th>
-                        <th>Laporan</th>
-                        <th>Status</th>
-                        <th>Action</th>
-                    </tr>
-                </thead>
-                @foreach ($complaints as $complaint)
-                    <tbody>
-                        <td>{{ $complaint->user->name}}</td>
-                        <td>{{ $complaint->nik}}</td>
-                        <td>{{ $complaint->isi_laporan}}</td>
-                        <td>{{ $complaint->status}}</td>
-                        <td>
-                            <a href="" class="btn btn-primary">
-                                <i class="fa fa-info"></i>
-                            </a>
-                            <a href="{{Route('complaints.edit',['id'=>$complaint->id])}}" class="btn btn-info">
-                                <i class="fa fa-edit"></i>
-                            </a>
-                            <a href="" class="btn btn-danger">
-                                <i class="fa fa-trash"></i>
-                            </a>
-                        </td>
-                    </tbody>
-                @endforeach
-            </table>
->>>>>>> 652ea1962c9ac6f77fd71446ffabd1d0585bc9b0
         </div>
     </div>
 </div>
 
 </div>
-<<<<<<< HEAD
 <!-- /.container-fluid -->
-=======
-    
->>>>>>> 652ea1962c9ac6f77fd71446ffabd1d0585bc9b0
 @stop

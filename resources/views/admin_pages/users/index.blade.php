@@ -1,5 +1,4 @@
 @extends('layouts.frontend_layout')
-<<<<<<< HEAD
 
 @section('content')
 <!-- Begin Page Content -->
@@ -15,19 +14,6 @@
             Tambah Pengguna
         </a>
         @endif
-=======
-@section('content')
-
-<!-- Begin Page Content -->
-<div class="container-fluid">
-
-
-<!-- DataTales Example -->
-<div class="card shadow mb-4">
-    <div class="card-header py-3">
-        <h6 class="m-0 font-weight-bold text-primary">List Pengguna</h6>
-        <a href="{{route('pengguna.create')}}" class="btn btn-primary float-right">Tambah Pengguna</a>
->>>>>>> 652ea1962c9ac6f77fd71446ffabd1d0585bc9b0
     </div>
     <div class="card-body">
         <div class="table-responsive">
@@ -36,20 +22,13 @@
                     <tr>
                         <th>Nama</th>
                         <th>Email</th>
-<<<<<<< HEAD
                         <th>Addres</th>
                         <th>Phone</th>
                         <th>Rule</th>
-=======
-                        <th>Address</th>
-                        <th>Phone</th>
-                        <th>Role</th>
->>>>>>> 652ea1962c9ac6f77fd71446ffabd1d0585bc9b0
                         <th>Action</th>
                     </tr>
                 </thead>
                 <tbody>
-<<<<<<< HEAD
                     @foreach($users as $users)
 
                     <tr>
@@ -104,27 +83,6 @@
                             </div>
                         </td>
                     </tr>
-=======
-                    @foreach ($users as $user)
-                        <tr>
-                            <td>{{ $user->name }}</td>
-                            <td>{{ $user->email}}</td>
-                            <td>{{ $user->address}}</td>
-                            <td>{{ $user->telp}}</td>
-                            <td>{{ $user->role}}</td>
-                            <td>
-                                <a href="{{Route('pengguna.show',['id'=>$user->id])}}" class="btn btn-primary">
-                                    <i class="fa fa-info"></i>
-                                </a>
-                                <a href="{{Route('pengguna.edit',['id'=>$user->id])}}" class="btn btn-info">
-                                    <i class="fa fa-edit"></i>
-                                </a>
-                                <a href="{{Route('pengguna.edit',['id'=>$user->id])}}" class="btn btn-danger">
-                                    <i class="fa fa-trash"></i>
-                                </a>
-                            </td>
-                        </tr>
->>>>>>> 652ea1962c9ac6f77fd71446ffabd1d0585bc9b0
                     @endforeach
                 </tbody>
             </table>
@@ -134,8 +92,4 @@
 
 </div>
 <!-- /.container-fluid -->
-<<<<<<< HEAD
-=======
-    
->>>>>>> 652ea1962c9ac6f77fd71446ffabd1d0585bc9b0
 @stop

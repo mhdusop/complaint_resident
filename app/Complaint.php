@@ -19,12 +19,8 @@ class Complaint extends Model
         'status' => 'string'
     ];
 
-<<<<<<< HEAD
     public function user ()
     {
-=======
-    public function user () {
->>>>>>> 652ea1962c9ac6f77fd71446ffabd1d0585bc9b0
         return $this->belongsto('App\User', 'user_id');
     }
 }

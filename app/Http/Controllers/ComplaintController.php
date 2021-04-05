@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Complaint;
 use Illuminate\Support\Facades\DB;
-Use Auth;
+use Auth;
 
 class ComplaintController extends Controller
 {
